@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BackToMainActivityWithResult">
+
+    <TextView
+        android:id="@+id/tv_pilih_angka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/choose_number"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_number"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pilih_angka">
+
+        <RadioButton
+            android:id="@+id/radio_button_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_50"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_150"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_150"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_200"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="@string/choose"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_number"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
